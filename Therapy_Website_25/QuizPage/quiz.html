@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">Cool Company Name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container">
+      <div class="text-center mt-5">
+          <h2>Click on the dot closest to your injury to start creating a program</h2>
+      </div>
+    </div>
+
+  <div class="container">
+      <img src="bodyDiagram.jpg" alt="Snow">
+
+      <button type="button" class="redButton tibialisAnterior" data-toggle="modal" data-target="#tibialisAnterior">
+      <a data-toggle="tooltip" data-placement="top" title="Tibialis Anterior">o</a></button>
+
+      <button type="button" class="redButton gastrocnemius" data-toggle="modal" data-target="#gastrocnemius">
+      <a data-toggle="tooltip" data-placement="top" title="Gastrocnemius">o</a></button>
+
+      <button type="button" class="redButton leftQuad" data-toggle="modal" data-target="#leftQuad">
+      <a data-toggle="tooltip" data-placement="top" title="Left Quad">o</a></button>
+
+      <button type="button" class="redButton rightQuad" data-toggle="modal" data-target="#rightQuad">
+      <a data-toggle="tooltip" data-placement="top" title="Right Quad">o</a></button>
+
+      <button type="button" class="redButton leftHip" data-toggle="modal" data-target="#leftHip">
+      <a data-toggle="tooltip" data-placement="top" title="Left Hip">o</a></button>
+
+      <button type="button" class="redButton rightHip" data-toggle="modal" data-target="#rightHip">
+      <a data-toggle="tooltip" data-placement="top" title="Right Hip">o</a></button>
+
+      <button type="button" class="redButton leftGroin" data-toggle="modal" data-target="#leftGroin">
+      <a data-toggle="tooltip" data-placement="top" title="Left Groin">o</a></button>
+
+      <button type="button" class="redButton rightGroin" data-toggle="modal" data-target="#rightGroin">
+      <a data-toggle="tooltip" data-placement="top" title="Right Groin">o</a></button>
+
+      <button type="button" class="redButton butt" data-toggle="modal" data-target="#butt">
+      <a data-toggle="tooltip" data-placement="top" title="Butt">o</a></button>
+
+      <button type="button" class="redButton leftHamstring" data-toggle="modal" data-target="#leftHamstring">
+      <a data-toggle="tooltip" data-placement="top" title="Left Hammy">o</a></button>
+
+      <button type="button" class="redButton rightHamstring" data-toggle="modal" data-target="#rightHamstring">
+      <a data-toggle="tooltip" data-placement="top" title="Right Hammy">o</a></button>
+
+      <button type="button" class="redButton rightCalf" data-toggle="modal" data-target="#rightCalf">
+      <a data-toggle="tooltip" data-placement="top" title="Right Calf">o</a></button>
+
+      <button type="button" class="redButton leftCalf" data-toggle="modal" data-target="#leftCalf">
+      <a data-toggle="tooltip" data-placement="top" title="Left Calf">o</a></button>
+
+      <button type="button" class="redButton leftAchilles" data-toggle="modal" data-target="#leftAchilles">
+      <a data-toggle="tooltip" data-placement="top" title="Left Achilles">o</a></button>
+
+      <button type="button" class="redButton rightAchilles" data-toggle="modal" data-target="#rightAchilles">
+      <a data-toggle="tooltip" data-placement="top" title="Right Achilles">o</a></button>
+
+      <button type="button" class="redButton leftHeel" data-toggle="modal" data-target="#leftHeel">
+      <a data-toggle="tooltip" data-placement="top" title="Left Heel">o</a></button>
+
+      <button type="button" class="redButton rightHeel" data-toggle="modal" data-target="#rightHeel">
+      <a data-toggle="tooltip" data-placement="top" title="Right Heel">o</a></button>
+
+      <button type="button" class="redButton leftFoot" data-toggle="modal" data-target="#leftFoot">
+      <a data-toggle="tooltip" data-placement="top" title="Left Foot">o</a></button>
+
+      <button type="button" class="redButton rightFoot" data-toggle="modal" data-target="#rightFoot">
+      <a data-toggle="tooltip" data-placement="top" title="Right Foot">o</a></button>
+
+      <button type="button" class="redButton innerQuad" data-toggle="modal" data-target="#innerQuad">
+      <a data-toggle="tooltip" data-placement="top" title="Inner Quad">o</a></button>
+
+      <button type="button" class="redButton outerQuad" data-toggle="modal" data-target="#outerQuad">
+      <a data-toggle="tooltip" data-placement="top" title="Outer Quad">o</a></button>
+
+    </div>
+
+
+
+
+<div class="modal" id="tibialisAnterior">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your exterior shin?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href = "https://docs.google.com/document/d/e/2PACX-1vQYBP4wxofUt1BPiee69GjybiR-DK40FcK69vHIotSv002EVJH-SN_nSEfMerE6xCkwZLSl4hew6ybe/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <a href = "#">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="gastrocnemius">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your outer shin?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href = "https://docs.google.com/document/d/e/2PACX-1vSzNy0LDVAaxZ3Eeka6rPVPrkq4N9I8NKG5knyiGmdeCmMCL7yvZIIm0Vn1G4P9yV9q1XQqaIkADMeI/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftQuad">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your quad?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTLoeTbU9-836DNYS6wZsSgCOykWmoMIZraVcOVsgcf2wGPBVvT7WX2hTbtYUozkjNtRJBlmmFFPz8L/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightQuad">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your right quad?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQhnX4aEy1uxt3aYuzruMZQbvvRwszjTTRErkZOVdmOfV5HnJF4COtoMBkfFHtpSC3hxys0Od0USOz-/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftHip">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your left hip?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTtlBIKAl_2eIwA7hIb3VQAtNIWKtz4jMSnHfda4FNbnD-jva866-AM8OnEhM6DPPaz3KpNLnG-hRg4/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightHip">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your right hip?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRYC5BJ9jhu0RADIcZXo_uRAWkTJP0HcRBoyyNDzw4ArowGf69biLg63bJe_k_R_JOfOq3uKisM82k8/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftGroin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your groin?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRMCRTfyxrZg78H3pG6V5DKjWzowBb4GhdghaDAxL-gEgIpsz3twp-04XTicNMTn447r3kOfTeuIfQn/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightGroin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your groin?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQFF1pCZz9i7QQJR4_2ND9dML7_oieyLwTGD3dFywBjguilL5FpsUOILWZANYphnwYTeWj1_6iDsgUH/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="butt">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your butt?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTmtjrNkTqoT0UttKH04Miz_9zSKSpYA4V27SyPf-XQpbX18aLYNj0-q_ibFfRdeDfM_ocsYP4gWGYG/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftHamstring">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your hamstring?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQlkDvG9OZAL4ndRNXxzcipl0a0sHVuX-o2ZP18wrvQtu1T3tS63m7caGZDdMABbv8c_NnpfMqD_GyE/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightHamstring">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your hamstring?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS48j6b0umQZRvHPYwNA6iiZ1pG2egOYU1qAeVb8ATgGS2JUYrDMo1z71i6hjT1dWYM7XemTMJt8en5/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightCalf">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your calf?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTG52udGQCBK41zfjBQ-DoD4mcSQPFCEPYFUGMx1YiMYcO0b5xvbRLOD-9sfxS7uA2k9tANHyyTvA3q/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftCalf">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your calf?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQxRcP2n0Xu7Us6Vlxv29TFYrmdKseOaFl8DUHY1mFANMNOhu6jNZeehC9SSrxUVLb9VmR2Q-ATpygU/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftAchilles">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your achilles?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRGPw6vyYK6pHxJ1h_qmQFiZ9iwRGxUPM655IsWFwbtZrzd2BKX9AOwR2JeVQ-i6-TaFVDQNfWA_fyT/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightAchilles">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your Achilles?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRGthkL3AcPzoobiLH3c3eujeHs-rMyXFsZYkcnGDNSX_hfGW5B0iJxJAynilqoCGntFPNGh1I1Jntx/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftHeel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your heel?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSOcwi3cgah9Fmj8W8gqTgOOQt6Oa5VAiDNMXjl70nHmqfuOIaGu_9U_L5hBjeRnyMkgvGe2De_6K-0/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightHeel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your heel?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSq9Za2ORdCBgMSPhq5t9EgYoYtI3s0H3fPlhvtNrB04G128GBB5eWc5M4DnL-9Jpj7rGVfXDIcCHJ5/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="leftFoot">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your foot?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSxex6h5TDPl7_Y6C8UNsCIQ1C4RuCddT314zEh1AAdvzoGx2dkTB4QOCLCc4hylubns7VbUjxrcVhE/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="rightFoot">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your foot?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSGygVm91pyWmrdVE7W4v5un5OYijM_u3z7ERRw9rwtIZSdFeBGcRuC1fDqXSvOKNw930JR-PrnfdEd/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="innerQuad">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your inner quad?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRxQJOe7gcceCgO8nXeOJ0KJH9q9ITEkdAhxnYHsIsAv_yuM-eySPtZnJLoYvZE2k9nx8F2vMfTbwFo/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="outerQuad">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href= '#' style="text-decoration:none;">
+        <h4 class="modal-title">Would you like to see exercises for your outer quad?</h4>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQgBqE01pcLniiQE6KYMDPRumy8Qa1mLG8qOOBkCP66XhxM2yumAvcotiQAWDNA6eDOXO8g3HZgKdBX/pub">
+        <button type="button" class="btn btn-success">Yes</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+</body>
+</html>
